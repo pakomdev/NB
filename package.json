@@ -1,0 +1,98 @@
+{
+  "name": "nb",
+  "displayName": "NB",
+  "publisher": "PakomDev",
+  "version": "0.0.1",
+  "icon": "images/icon256.png",
+  "scripts": {
+    "build": "tsc",
+    "package": "vsce package",
+    "watch": "tsc -w"
+  },
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onLanguage:typescript",
+    "onLanguage:javascript",
+    "onLanguage:css",
+    "onLanguage:html",
+    "onLanguage:json",
+    "onLanguage:jsonc",
+    "onLanguage:svg"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "typescript",
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ],
+        "aliases": [
+          "TypeScript"
+        ]
+      },
+      {
+        "id": "javascript",
+        "extensions": [
+          ".js",
+          ".jsx"
+        ],
+        "aliases": [
+          "JavaScript"
+        ]
+      },
+      {
+        "id": "css",
+        "extensions": [
+          ".css"
+        ],
+        "aliases": [
+          "CSS"
+        ]
+      },
+      {
+        "id": "html",
+        "extensions": [
+          ".html"
+        ],
+        "aliases": [
+          "HTML"
+        ]
+      },
+      {
+        "id": "json",
+        "extensions": [
+          ".json"
+        ],
+        "aliases": [
+          "JSON"
+        ]
+      },
+      {
+        "id": "svg",
+        "extensions": [
+          ".svg"
+        ],
+        "aliases": [
+          "SVG"
+        ]
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@types/vscode": "^1.104.0",
+    "fast-xml-parser": "^5.2.5",
+    "typescript": "^5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pakomdev/NB.git"
+  }
+}
